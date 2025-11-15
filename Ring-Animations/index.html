@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring for You</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background:black;
+        }
+        .ring{
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+        .ring i{
+            cursor: pointer;
+            position: absolute;
+            inset: 0;
+            border: 2px solid white;
+            transition: 0.7s;
+        }
+        .ring i:nth-child(1){
+            border-radius: 38% 62% 63% 37% / 40% 44% 56% 59%;
+            animation: ani 6s linear infinite;
+        }
+        .ring i:nth-child(2){
+            border-radius: 41% 44% 56% 58% / 38% 62% 63% 37%;
+            animation: ani 4s linear infinite;
+        }
+        .ring i:nth-child(3){
+            border-radius: 41% 44% 56% 58% / 38% 62% 63% 37%;
+            animation: ani 10s linear infinite;
+        }
+        .ring:hover i{
+            border:6px solid var(--clr);
+            filter: drop-shadow(0 0 20px var(--clr));
+        }
+        @keyframes ani {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes ani2 {
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ring">
+        <i style="--clr: rgb(234, 14, 54);"></i>
+        <i style="--clr: rgb(14, 240, 82);"></i>
+        <i style="--clr:rgb(222, 124, 13);"></i>
+    </div>
+
+</body>
+</html>
