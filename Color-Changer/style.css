@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: #212121;
+    color: orangered;
+}
+nav p{
+    font-size: 35px;
+    font-weight: 600;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.canvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100px;
+}
+.button{
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+}
+#pink{
+    background-color: pink;
+}
+#Red{
+    background-color: red;
+}
+#Blue{
+    background-color: blue;
+}
+#Orange{
+    background-color: orange;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90px;
+}

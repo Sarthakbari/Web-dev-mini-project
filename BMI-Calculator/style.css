@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url(https://wallpaperboat.com/wp-content/uploads/2019/10/best-background-for-website-14.jpg); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: #fff;
+    height: 100vh;
+
+}
+.container{
+    background-color: #212121;
+    max-width: 30vw;
+    /* height: 80vh; */
+    width: 100%;
+    border-radius: 20px ;
+    padding: 20px;
+    border: 2px solid #767171;
+}
+h1{
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form input{
+    height: 40px;
+    font-size: 17px;
+    padding: 0px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+    background-color: rgb(255, 251, 251);
+    border-image: initial;
+    border-radius: 5px;
+}
+button{
+    height: 5vh;
+    width: 27vw;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px; 
+    background: #79d464;
+    border: none;
+    /* padding: 10px 15px 10px 15px; */
+    cursor: pointer;
+}
+.result{
+    color: Red;
+    font-size: 17px;
+    margin-top: 7px;
+}
+.guide{
+    margin-top: 7px;
+    text-align: center;
+}
+.guide h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.guide p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 600px){
+    .container{
+        max-width: 60vw;
+        padding: 15px 23px;
+        margin-right: 20px;
+        width: 100%;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    button{
+        margin-left: 65px;
+        margin-top: 8px;
+    }
+    .guide{
+        margin-top: 2px;
+    }
+}
+@media screen and (max-width: 400px){
+    .container{
+        max-width: 80vw;
+        padding: 40px 35px;
+        margin-right: 20px;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
