@@ -132,7 +132,7 @@ If you like these projects, don't forget to **Star ⭐ this repository**.
 
 **Sarthak Bari**
 
-GitHub: https://github.com/your-github-username
+GitHub: https://github.com/Sarthakbari
 
 ---
 
